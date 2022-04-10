@@ -46,3 +46,46 @@ form button:hover {
     color: white;
 }
 /*покраска кнопочки с галочкой */
+
+/* Начинаем красить мусорки: */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    /* .поставили корзинки в центр */
+
+    .todo-list {
+        min-width: 20%;
+        list-style: none;
+    }
+
+.todo {
+    margin: 0.5 rem;
+background: white;
+color: black;
+font-size: 1.5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+/* поля с мусорками сделали белымии нужны размеров */
+
+ .todo li {
+    flex: 1;
+ }
+
+.trash-btn, .complete-btn {
+     background: #ff6f47;
+     color: white;
+     border: none;
+     padding: 1rem;
+     cursor: pointer;
+     font-size: 1rem;
+ }
+ .complete-btn{
+     background: rgb(73, 204, 73);
+ }
+ .todo-item {
+    padding: 0rem 0.5rem;
+}
