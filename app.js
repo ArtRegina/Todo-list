@@ -33,7 +33,7 @@ function addToo(event) {
     todoDiv.appendChild(trashButton);
     //APPEND TO LIST
     todoList.appendChild(todoDiv);  
-    //Clear Todo INPUT VLUE
+    //Clear Todo INPUT VALUE
     todoInput.value = "";  
 }
 function deleteCheck(e) {
@@ -41,7 +41,12 @@ function deleteCheck(e) {
     //DELETE TODO
     if (item.classList[0] === "trash-btn"){
         const todo = item.parentElement;
-        todo.remove();
+        //Animation
+        todo.classList.add("fall");
+        todo.addEventListener("transitionend", function(){
+         todo.remove();
+        });
+
     }
 
     //CHECK MARK
